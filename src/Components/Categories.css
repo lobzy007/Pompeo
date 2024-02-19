@@ -1,0 +1,184 @@
+.Categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 120px 7%;
+  position: relative;
+  border-bottom: 2px solid rgb(235, 235, 235);
+
+  .rotated {
+    /* Hand Craft Pottery */
+    position: absolute;
+    width: 213px;
+    height: 34px;
+    left: 0;
+    right: 79.93%;
+    top: 404px;
+    bottom: 431px;
+    transform: rotate(-90deg);
+    color: rgb(219, 219, 219);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .top-text {
+    color: rgb(215, 116, 116);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .title {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0%;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    .product-1 {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      align-items: center;
+      box-sizing: border-box;
+      border: 30px solid rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      width: 240px;
+      height: 240px;
+      background: rgb(228, 179, 102);
+
+      p {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+
+    .product-2 {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      align-items: center;
+      box-sizing: border-box;
+      border: 30px solid rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      width: 240px;
+      height: 240px;
+      background: rgb(240, 91, 16);
+
+      p {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+
+    .product-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      border: 30px solid rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      cursor: pointer;
+      width: 240px;
+      height: 240px;
+      background: rgb(162, 16, 16);
+
+      p {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+  }
+
+  .articles {
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+    .ar {
+      h2 {
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin: 0;
+      }
+
+      p {
+        color: rgb(108, 108, 108);
+        font-family: Libre Franklin;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (max-width:850px) {
+  .Categories {
+    .rotated {
+      display: none;
+    }
+
+    .products {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .articles {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
